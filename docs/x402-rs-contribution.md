@@ -70,5 +70,5 @@ partially (the `claim` leg landed on-chain; the `settle` leg and
 cross-restart state reconciliation are not fully closed). I am
 flagging this so the maturity is clear up front.
 
-Reference and vectors: <link your repository here after renaming it to
-avoid the name clash with the `x402-rs` org>.
+Reference and vectors:
+https://github.com/Adelagric/x402-batch-settlement

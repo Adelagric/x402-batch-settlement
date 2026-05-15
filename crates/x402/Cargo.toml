@@ -6,7 +6,7 @@ license.workspace = true
 description = "x402 V2 in Rust: wire types and the batch-settlement EVM cryptographic core (EIP-712 channel/voucher, claim/settle)"
 readme = "README.md"
 authors = ["Adel Kaleche <kaleche@gmail.com>"]
-repository = "https://github.com/Adelagric/x402-rs"
+repository = "https://github.com/Adelagric/x402-batch-settlement"
 keywords = ["x402", "payments", "agents", "http"]
 categories = ["web-programming", "api-bindings", "cryptography::cryptocurrencies"]
 
