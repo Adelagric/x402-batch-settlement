@@ -2,8 +2,6 @@
 
 Two precise discrepancies found while implementing x402 V2 from the
 spec, each verified by reproducing `viem`'s output byte-for-byte.
-Intended as upstream contribution (issue / PR against
-`x402-foundation/x402`), not commentary.
 
 ## 1. `voucher.ts` docstring misstates `channelId` derivation
 

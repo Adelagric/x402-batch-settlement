@@ -1,8 +1,5 @@
 # Proposal: `batch-settlement` (V2, EVM) for x402-rs
 
-Draft for an issue on `x402-rs/x402-rs`. Review and put in your own
-voice before posting.
-
 ## Context
 
 `x402-rs` is the mature general Rust x402 implementation: `exact` V2
