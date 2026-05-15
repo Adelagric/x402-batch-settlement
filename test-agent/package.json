@@ -1,0 +1,16 @@
+{
+  "name": "test-agent",
+  "private": true,
+  "type": "module",
+  "description": "x402 V2 buyer that pays and measures router overhead",
+  "scripts": {
+    "start": "node index.mjs",
+    "start:batch": "node index-batch.mjs"
+  },
+  "dependencies": {
+    "@x402/axios": "^2",
+    "@x402/evm": "^2",
+    "axios": "^1",
+    "viem": "^2"
+  }
+}

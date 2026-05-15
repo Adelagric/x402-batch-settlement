@@ -1,0 +1,18 @@
+/target
+**/target
+node_modules/
+*.log
+*.log*
+*~
+.DS_Store
+
+# Local configuration and secrets — never versioned
+.env
+.env.*
+config.local.toml
+*.local.toml
+secrets.local.txt
+
+# Local working instructions, out of the versioned tree
+/CLAUDE.md
+/.claude/

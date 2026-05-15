@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["crates/x402", "poc-x402-llm"]
+
+[workspace.package]
+edition = "2021"
+license = "MIT OR Apache-2.0"

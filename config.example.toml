@@ -1,0 +1,38 @@
+# Copy to config.local.toml (gitignored) and fill in real values.
+# Any key can be overridden via env: AR_<SECTION>__<KEY>
+# e.g. AR_UPSTREAM__API_KEY=...
+
+[server]
+bind = "127.0.0.1:8080"
+
+[facilitator]
+# x402 facilitator base URL (hosted, testnet).
+url = "https://x402.org/facilitator"
+
+[payment]
+scheme = "exact"                                          # "exact" | "batch-settlement"
+network = "eip155:84532"                                  # Base Sepolia (CAIP-2)
+asset = "0x036CbD53842c5426634e7929541eC2318f3dCF7e"      # test USDC on Base Sepolia
+pay_to = "0xREPLACE_WITH_RECIPIENT_WALLET"
+amount = "1000"                                           # atomic units, 6 decimals: 1000 = 0.001
+max_timeout_seconds = 60
+asset_name = "USDC"
+asset_version = "2"
+resource_url = "http://127.0.0.1:8080/v1/chat/completions"
+# batch-settlement only: facilitator-declared receiver authorizer + channel withdraw delay
+# receiver_authorizer = "0xd407e409E34E0b9afb99EcCeb609bDbcD5e7f1bf"
+# withdraw_delay = 900
+
+[upstream]
+base_url = "https://REPLACE_WITH_UPSTREAM_MESSAGES_ENDPOINT"
+model = "REPLACE_WITH_MODEL_ID"
+api_key = "REPLACE_WITH_API_KEY"
+api_version = "REPLACE_OR_REMOVE"
+max_tokens = 256
+
+[runtime]
+# settlement: "sync" (on hot path) | "async" (spawned off path)
+settlement = "sync"
+# verify_mode: "facilitator" (always /verify) | "cached" (trust payer for ttl)
+verify_mode = "facilitator"
+verify_cache_ttl_secs = 30
